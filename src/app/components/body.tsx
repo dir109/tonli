@@ -39,10 +39,7 @@ export default function Body() {
     }
 
     try {
-      const result = await axios.post(
-        "https://dafo-ten.vercel.app/api/send",
-        JSON.stringify(kery)
-      );
+      const result = await axios.post("/api/send", JSON.stringify(kery));
 
       if (result.status === 200) {
         if (count == 2)
