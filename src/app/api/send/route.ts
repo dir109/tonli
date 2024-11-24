@@ -6,7 +6,7 @@ export async function POST(request: Request) {
 
   try {
     let transporter: mailer.Transporter = mailer.createTransport({
-      service: "gmail.com",
+      service: "Gmail",
       host: "smtp.gmail.com",
       port: 465,
       secure: true,
